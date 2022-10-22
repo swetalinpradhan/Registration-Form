@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Registration Form</title>
+</head>
+<body>
+<div class="container">
+    <div class="left">
+        <form>
+            <h1>Student Enrolment Form</h1>
+        <div class="input-box">
+            <label for="name">Name:</label>
+            <input type="text" name="name" placeholder="Enter Your Name" id="name" class="text-box">
+        </div>
+
+        <div class="input-box">
+            <label for="">Email:</label>
+            <input type="email" name="email" placeholder="example@gmail.com" id="email" class="text-box">
+        </div>
+
+        <div class="input-box">
+            <label for="">Image:</label>
+            <input type="file" name="image" id="image-input" class="image-box">
+        </div>
+
+        <div class="input-box">
+            <label for="">Age:</label>
+            <input type="number" name="age" placeholder="16+" id="age" class="text-box" min="16">
+        </div>
+
+        <div class="input-box2">
+            <label for="">Gender:</label>
+            <input type="radio" name="gender" id="gender1" value="Male"><span>Male</span>
+            <input type="radio" name="gender" id="gender2" value="Female"><span>Female</span>
+            <input type="radio" name="gender" id="gender3" value="Other"><span>Other</span>
+        </div>
+        <div class="input-box2">
+            <label for="">Skills:</label>
+            <label class="block"><input type="checkbox" name="skill" id="skill" value="Java">Java</label>
+            <label class="block"><input type="checkbox" name="skill" id="skill" value="Python">Python</label>
+            <label class="block"><input type="checkbox" name="skill" id="skill" value="HTML">HTML</label>
+            <label class="block"><input type="checkbox" name="skill" id="skill" value="JavaScript">JavaScript</label>
+        </div>
+        <div class="input-box">
+            <input type="button" value="Register" class="button" id="btn" onclick="AddRow()">
+        </div>
+        </form>
+
+    </div>
+    <div class="right">
+        <div class="box">
+            <div class="head">
+                <h2>Student Details</h2>
+            </div>
+        <div class="desc">
+            <img src="" alt="" id="display_img">
+            <h2> <span id="name1"></span></h2>
+            <p><span id="email1"></span></p>
+            <p><span id="age1"></span></p>
+            <p><span id="previewgender"></span></p>
+            <p><span id="skillprint"></span></p>
+        </div>
+    
+        </div>
+
+    </div>
+</div>
+<script src="script.js">
+    
+</script>
+</body>
+</html>
